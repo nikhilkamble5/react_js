@@ -16,6 +16,9 @@ const App2=()=>{
 
     {/* Arrow func */}
     <button onClick={()=>Demo2()}>Arrow Function handler</button>
+
+    {/* Arrow fUnction handeler */}
+    <button onClick={()=>Demo2()}>Arrow function Handler</button>
     </>
   )
 }
