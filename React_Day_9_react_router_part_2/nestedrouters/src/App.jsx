@@ -23,6 +23,14 @@ const App = () => {
 
             {/* fall back routing  */}
             <Route path="*" element={<Home />}></Route>
+          {/*  */}
+          
+          </Route>
+
+          <Route path="/login" element={<h1>Login page</h1>}>
+          <Route index  element={<h1>Login Dash</h1>}></Route>
+          <Route path="login/forgotpassword" element={<h1>Forgot pass</h1>}></Route>
+
           </Route>
         </Routes>
       </Router>
