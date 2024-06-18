@@ -17,12 +17,14 @@ const App = () => {
     {/* //nested container or wrapper boundary d=to defined ultiple route  */}
     <Route path='/' element={<Home/>}></Route>
     <Route path='/about' element={<About/>}></Route>
-    <Route path='/contact' element={<Contact/>}></Route>
+    {/* url data handeling */}
+
+    <Route path='/contact/:name/:name2' element={<Contact/>}></Route>
     <Route path='/service' element={<Service/>}></Route>
 
       {/* fall back Routing */}
-    {/* <Route path='*' element={<PageNotFound/>}></Route> */}
-    <Route path='*' element={<Home/>}></Route>
+    <Route path='*' element={<PageNotFound/>}></Route>
+    {/* <Route path='*' element={<Home/>}></Route> */}
 
     </Routes>
 

@@ -13,7 +13,7 @@ const Navbar = () => {
       <ul className='navbar-nav m-auto'>
         <li className='nav-item mx-4'><NavLink to='/' className='nav-link'>Home</NavLink></li>
         <li className='nav-item mx-4'><NavLink to='/about' className='nav-link'>About Us</NavLink></li>
-        <li className='nav-item mx-4' > <NavLink to='/contact' className='nav-link'>Contact Us</NavLink></li>
+        <li className='nav-item mx-4' > <NavLink to='/contact/Rushi/Abhijit' className='nav-link'>Contact Us</NavLink></li>
         <li className='nav-item mx-4' > <NavLink to='/service' className='nav-link'>Service</NavLink></li>
         <li className='nav-item mx-4' > <NavLink to='/faq' className='nav-link'>Faq Us</NavLink></li>
 
