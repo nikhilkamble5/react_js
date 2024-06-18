@@ -2,6 +2,41 @@ import React, { Component } from "react";
 import Products from "./Products";
 
 export default class App extends Component {
+
+  constructor(){
+    super()
+    
+    this.state=({
+      //1
+      elect_data:true,
+      other_prod:true,
+    })
+  }
+
+  //handle Electronics products Data
+  Electronic_prod=()=>{
+    this.setState({
+      elect_data:true,
+      other_prod:false,
+      
+    })
+  }
+
+  //handle other product
+
+  Handle_Other_Prod=()=>{
+    this.setState({
+      other_prod:true,
+      elect_data:false,
+    })
+  }
+  // Handle_All_Products
+  Handle_All_Products=()=>{
+    this.setState({
+      elect_data:true,
+      other_prod:true,
+    })
+  }
   render() {
     //product array objetc
     const Elect_Prod = [
@@ -63,16 +98,20 @@ export default class App extends Component {
             </div>
 {/* ********************************************** */}
      <div className="col-md-12 text-center bg-dark p-3" >
-     <button className="btn btn-secondary px-4 fw-bold my-3">All Product</button>
-      <button className="btn btn-danger px-4 mx-4 fw-bold my-3">Electronic Product</button>
-      <button className="btn btn-primary px-4 fw-bold my-3">Other Product</button>
+     <button className="btn btn-secondary px-4 fw-bold my-3" onClick={()=>this.Handle_All_Products()}>All Product</button>
+      <button className="btn btn-danger px-4 mx-4 fw-bold my-3" onClick={()=>this.Electronic_prod()}>Electronic Product</button>
+      <button className="btn btn-primary px-4 fw-bold my-3" onClick={()=>this.Handle_Other_Prod()}>Other Product</button>
      </div>
 
 {/* ********************************************** */}
 
             <div className="col-md-12">
               <div className="row">
-                {Elect_Prod.map((val) => {
+                
+                {
+                  this.state.elect_data ?
+               
+                Elect_Prod.map((val,index,array) => {
                   return (
                     <div className="col-md-3" key={val.id}>
                       <Products
@@ -87,9 +126,12 @@ export default class App extends Component {
 
                     // other product
                   );
-                })}
+                }):null
+                }
+              
 
 {
+    this.state.other_prod &&
                       Other_Products.map((val)=>{
                       return(
                         
