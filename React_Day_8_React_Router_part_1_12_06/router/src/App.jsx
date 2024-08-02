@@ -6,6 +6,8 @@ import About from './About'
 import Contact from './Contact'
 import Service from './Service'
 import PageNotFound from './PageNotFound'
+import SimpleInterestCalculator from '../../../Calculator/calculator/src/components/SimpleInterestCalculator'
+import BMICalculator from './components/BMICalculator'
 const App = () => {
   return (
     <>
@@ -20,7 +22,11 @@ const App = () => {
     {/* url data handeling */}
 
     <Route path='/contact/:name/:name2' element={<Contact/>}></Route>
+    
     <Route path='/service' element={<Service/>}></Route>
+    <Route path='/simple-interest-calculator' element={<SimpleInterestCalculator />} /> {/* Add new route */}
+              <Route path='/bmi' element={<BMICalculator />} />
+
 
       {/* fall back Routing */}
     <Route path='*' element={<PageNotFound/>}></Route>

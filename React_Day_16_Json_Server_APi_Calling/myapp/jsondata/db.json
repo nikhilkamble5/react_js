@@ -1,0 +1,25 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "p_id": 1234,
+      "p_name": "Laptop",
+      "p_price": "49000/-",
+      "p_desc": "Ram 8Gb ,Rom 1 TB"
+    },
+    {
+      "id": 2,
+      "p_id": 1234,
+      "p_name": "Laptop",
+      "p_price": "89000/-",
+      "p_desc": "Ram 8Gb ,Rom 1 TB"
+    },
+    {
+      "id": 3,
+      "p_id": 1234,
+      "p_name": "Laptop",
+      "p_price": "46000/-",
+      "p_desc": "Ram 8Gb ,Rom 1 TB"
+    }
+  ]
+}

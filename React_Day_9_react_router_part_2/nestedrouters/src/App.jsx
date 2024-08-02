@@ -4,9 +4,13 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Service from "./Service";
-import Navbar from "./Navbar";
+import Navbar from "../src/component/Navbar";
 import Header from "./Header";
+import FinancialCalculators from "./FinancialCalculators";
+import BMICalculator from "./BMICalculator";
+import SimpleInterestCalculator from "./SimpleInterestCalculator";
 const App = () => {
+
   return (
     <>
       <Router>
@@ -20,7 +24,12 @@ const App = () => {
             <Route path="/about" element={<About />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/service" element={<Service />}></Route>
+            <Route path="/financialCalculators" element={<FinancialCalculators />}></Route>
+            <Route path="/bmi" element={<BMICalculator />}></Route>
+            <Route path="/simplecalculator" element={<SimpleInterestCalculator />}></Route>
 
+
+            
             {/* fall back routing  */}
             <Route path="*" element={<Home />}></Route>
           {/*  */}
@@ -34,6 +43,8 @@ const App = () => {
           </Route>
         </Routes>
       </Router>
+
+ 
     </>
   );
 };

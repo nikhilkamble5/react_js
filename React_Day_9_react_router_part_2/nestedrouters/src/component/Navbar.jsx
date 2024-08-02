@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import './Navbar.css'
+// import './Navbar.css'
+import './Navbar.css';
+
 const Navbar = () => {
   return (
     <>
@@ -8,7 +10,9 @@ const Navbar = () => {
     {/* wrapper to navigate multiple component */}
     <nav className="navbar navbar-expand-lg navbar-light bg-dark text-light fw-bold">
 
-      <NavLink to="/" className='navbar-brand'><h2 className='text-warning'>React Router</h2></NavLink> 
+      {/* <NavLink to="/" className='navbar-brand'><h2 className='text-warning'>React Router</h2></NavLink>  */}
+      <NavLink to="/" className='navbar-brand'><h2 className='text-warning'>All in one Calculator</h2></NavLink> 
+
 
       <ul className='navbar-nav m-auto'>
         <li className='nav-item mx-4'><NavLink to='/' className='nav-link'>Home</NavLink></li>
