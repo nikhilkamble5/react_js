@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // looping statment'
+
+      //execute  a smae condition multiple time until it becomes wrong i.e iterating
+
+      // while ,do while, , for loop,
+
+      // for in,for of,ofr each
+
+      //while statment
+
+      // while(condition){
+      //   //block of code
+      //   // inc dec
+      // }
+
+      // let a = 1;
+      // while (a <= 100) {
+      //   console.log("hello " + a);
+      //   a++;
+      // }
+
+      //**************** */
+      //natural no
+      // var b = 1;
+      // while (b <= 100) {
+      //   document.write(b + "\n");
+      //   b++;
+      // }
+
+      // var c = 100;
+      // while (c >= 0) {
+      //   document.write(c + "\n");
+      //   c--;
+      // }
+
+      //print even no from 1 to 50
+
+      // let x = 1;
+      // var sum=0
+      // while (x <= 50) {
+      //   if (x % 2 == 0) {
+      //     document.write(x + "\n");
+      //     sum+=x
+      //   }
+
+      //   x++;
+      // }
+
+      // document.write(`<h2> total summ is ${sum}</h2>`)
+
+      ///*****************************
+      //nested while loop
+      // var a=1
+      // while(a<=10){
+      //   document.write(`<h1>${a}</h1>`)
+      //   //nested while loop
+      //   var b=1
+      //   while(b<=10){
+      //     document.write(b +" ")
+      //     b++
+      //   }
+      //   a++
+      // }
+
+      //*****************************
+
+      //table
+      // var a = 1;
+      // while (a <= 10) {
+      //   document.write(`<h1>${a}</h1>`);
+      //   //nested while loop
+      //   var b = 1;
+      //   while (b <= 10) {
+      //     document.write(b * a + " ");
+      //     b++;
+      //   }
+      //   a++;
+      // }
+
+      //************************
+
+      document.write("<table border='3' width='100%' cellspacing='0' cellpadding='10'>")
+      let x = 2;
+      while (x <= 15) {
+        document.write(`<h1>${x}</h1>`);
+
+        document.write('<tr>')
+        let y = 1;
+        while (y <= 10) {
+          var res=x*y
+          document.write(`<td>${res}</td>`);
+          y++;
+        }
+        document.write('</tr')
+        x++;
+      }
+      document.write('</table>')
+    </script>
+  </body>
+</html>

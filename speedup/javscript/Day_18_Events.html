@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .box1 {
+        height: 400px;
+        width: 400px;
+        background-color: aqua;
+        margin: 50px auto;
+      }
+
+      .box2{
+        height: 400px;
+        width: 400px;
+        background-color: blueviolet;
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Events
+    js is a Event based scripting  language
+
+
+    Do something on user action/actibvity .i.e events
+
+    4 types of event 
+
+    1 mouse Events 
+      on-prefix
+      onclick
+      ondbclick,oncontextmenu,onmouseover,onmouseleave,onmouseenter,onmouseout,onmouseup,
+      pnmousedown,,onmousewheel,onkousemove
+
+    2. keyboard Events:- onkeyup,onkeypress,onkeydown
+
+    3.Form Events:- onsubmit ,onchange,onfocus,onblur,onselect
+
+    4.windows events-onscroll,onload,onresize
+
+     -->
+
+    <!-- mouse events -->
+    <!-- onclick :-when we click on button -->
+
+    <button onclick="alert('welcome to the onclick event in js')">
+      clcik here
+    </button>
+
+    <!-- oncontextmenu when we right click on mouse button (before context menu is displayed) -->
+    <button oncontextmenu="alert('oncontextmenu event call')">Right Click on mouse button</button>
+
+    <!-- ondblick : when we double click on event -->
+
+    <button ondblclick="alert('double click event in js')">ondbclcik</button>
+
+    <button onclick="Demo1()">clcik here to change color</button>
+    <div id="box1" class="box1" onmouseover="Demo2()" onmouseleave="Demo3()"></div>
+
+
+    <!-- 🔥👇 onmouseenter :- when we enter mouse onspecific element -->
+    <!-- onouseout :- when we leave from that specific element -->
+
+    <!-- onmousedown - when we press mouse button -->
+     <!-- onmouseup  when we realse  preessed button-->
+      <!-- onmousemove when we mouse movement take place  -->
+    <div class="box2" id="box2" onmouseenter="Demo4()" onmouseout="Demo5()" onmousedown="Demo6()" onmouseup="Demo7()" onmousemove="Demo8()" onmousewheel="alert()"></div>
+
+    <!-- onmouseover :- when we hovering on that element -->
+     <!-- onmouseleave - when we leave from that specific element -->
+    <script>
+      const Demo1=()=>{
+          document.getElementById('box1').style.backgroundColor ='pink'
+      }  
+        //onmouseover
+      const Demo2=()=>{
+          document.getElementById('box1').style.backgroundColor ='indigo'
+      }
+
+      function Demo3(){
+        document.getElementById('box1').style.backgroundColor ='red'
+      }      
+
+      //onmouseenter
+      function Demo4(){
+        document.getElementById('box2').style.backgroundColor ='navy'
+      }
+
+      //onmouseout
+      function Demo5(){
+        document.getElementById('box2').style.backgroundColor ='orange'
+      }    
+      
+      //onmousedown
+      function Demo6(){
+        document.getElementById('box2').style.borderRadius='50%'
+      }
+
+      //onmouseup
+      function Demo7(){
+        document.getElementById('box2').style.borderRadius='20px'
+      }
+
+        //onmousemove
+      function Demo8(){
+      box2.style.backgroundColor="yellow"
+      }
+      </script>
+  </body>
+</html>

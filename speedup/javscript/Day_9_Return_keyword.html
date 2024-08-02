@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<!-- return keyboard 
+  returninga  data outside the functon and executes a values outside the function
+
+it stops a function execution after returning  a data
+
+-->
+  <script>
+
+function Sum(a=0,b=0,c=0){
+// console.log(a+b+c);
+return a+b+c;
+}
+
+var result =Sum(30,23,50)
+alert(result)
+//***************************
+
+function Multi(a=1,b=1){
+  console.log(a*b);
+}
+
+Multi(10,20)
+Multi(10)
+Multi()
+
+
+function User(emp_id,emp_roll){
+  return "Hello Your EmpId is"+emp_id+" Your Role is"+emp_roll
+}
+  console.log(User(1234,'Mern Stack Dev'));
+
+
+
+  //intervie quetion
+
+  function demo(name){
+    console.log("Hello A");
+    return name;
+    console.log("Hello B");
+  }
+
+  demo('nitish')
+  </script>
+</body>
+</html>

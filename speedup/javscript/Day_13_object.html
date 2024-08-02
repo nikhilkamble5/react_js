@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!-- method - when we pass a function as a  key value -->
+   <script>
+
+    const obj={
+      id:1,
+      name:'shubam',
+      mobile:987654321,
+
+      // method 
+      skill:function(){
+          document.write(`<h2>your name is ${this.name} And ur skill is ${this.mobile}}</h2>`)
+      }
+    }
+
+
+    console.log(obj);
+
+    //function defination
+    console.log(obj.skill);
+
+    obj.skill()
+   </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "User": [
+    {
+      "id": 1,
+      "name": "Akshay",
+      "skill": "java",
+      "email": "akshay@gmail.com",
+      "mobile": "9876543210"
+    },
+    {
+      "id": 2,
+      "name": "Akshay",
+      "skill": "java",
+      "email": "akshay@gmail.com",
+      "mobile": "9876543210"
+    },
+    {
+      "id": 3,
+      "name": "nikhil",
+      "skill": "java",
+      "email": "nikhil@gmail.com",
+      "mobile": "9876543210"
+    },
+    {
+      "id": 4,
+      "name": "raju",
+      "skill": "java",
+      "email": "raju@gmail.com",
+      "mobile": "9876543210"
+    }
+  ]
+}

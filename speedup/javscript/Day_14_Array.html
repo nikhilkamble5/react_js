@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Array is a collection of similar of diffrent type of elements
+  we can store any type of data in a single varible
+  start indexing fro 0
+  Array is special type of object in a js
+   Accessed through number indexing
+
+  -->
+    <script>
+      //crea te array using 2 ways
+
+      //literal way
+
+      const arr = [10, 20, "abc", "xyz", true, null, { id: 1 }, [100, 300]];
+      console.log(arr);
+
+      //creating instance of an array
+
+      const arr2 = new Array("html", "css", "react", "native");
+      console.log(arr2);
+
+      console.log(typeof arr); //object
+      console.log(typeof arr2); //object
+
+      console.log(arr[3]);
+
+      //***************************
+
+      const Emp = [
+        {
+          emp_id: 1,
+          emp_name: "Shubham",
+          emp_role: "Front end developer",
+          emp_ctc: "10LPA",
+
+          emp_skill: "React",
+        },
+        {
+          emp_id: 2,
+          emp_name: "dd",
+          emp_role: "Front end developer",
+          emp_ctc: "10LPA",
+
+          emp_skill: "React",
+        },
+        {
+          emp_id: 3,
+          emp_name: "ss",
+          emp_role: "Front end developer",
+          emp_ctc: "10LPA",
+
+          emp_skill: "React",
+        },
+      ];
+
+      console.log(Emp);
+
+      console.log(Emp[0]);
+      console.log(Emp[2].emp_skill);
+
+      //*****************
+
+      //harshal
+      //*****************
+
+      //iterating array
+
+      //for
+      //for of/
+      //for in
+
+      const arr3 = [10, 20, 30, 40, 50, 60, 70, 80];
+      console.log(arr3);
+
+      console.log(arr3);
+
+      for (let i = 0; i < arr3.length; i++) {
+        console.log(arr3[i]); //10  20 30
+      }
+
+      //for of
+
+      for (let x of arr3) {
+        console.log(x);
+      }
+
+      //for in -return index and value
+
+      for (let x in arr3) {
+        console.log(x + " :" + arr3[x]); // indexing
+      }
+
+      //create an empty array and apss 1 to 20 value dynamically
+
+      const no = new Array();
+      for (let i = 1; i <= 20; i++) {
+        console.log(i);
+        no[i - 1] = i;
+      }
+      console.log(no);
+      //************
+
+      var x = 0;
+      for (let i = 0; i <= 20; i++) {
+        no[x] = i;
+        x++;
+      }
+
+      console.log(no);
+    </script>
+  </body>
+</html>

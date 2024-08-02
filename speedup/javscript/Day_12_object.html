@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //we can update object values
+      const User = {
+        id: 1,
+        user_name: "pankaj",
+        user_age: 25,
+        user_Mobile: 987654321,
+        user_email: "pankaj@gmail.com",
+        user_email: "abhinav@gmail.com",
+      };
+      console.log(User);
+
+      //
+      User.user_age = 22;
+      console.log(User);
+
+      const obj = {
+        id: 1,
+        name: "mahesh",
+        skill: [
+          "html",
+          "css",
+          "mui",
+          "Aws",
+          {
+            skil: "front end",
+            skill2: "back end",
+            skill3: ["nodejs", "python"],
+          },
+        ],
+
+        role: {
+          role1: "front end dev",
+          role2: "back end dev",
+          role3: "fu;; end dev",
+        },
+      };
+
+      console.log(obj);
+
+      // console.log(obj.name);
+      // console.log(obj["name"]);
+
+      // console.log(obj.skill);
+      // console.log(obj.skill[4]);
+      console.log(obj.skill[4].skill2);
+
+      console.log(obj.skill[4].skill3);
+
+      //python
+      console.log(obj.skill[4].skill3[1]);
+
+      //role
+      console.log(obj.role);
+
+      //******************
+
+      //object in Array
+
+      const emp = [
+        {
+          id: 1,
+          user_name: "pankaj",
+          user_age: 25,
+          user_Mobile: 987654321,
+          user_email: "pankaj@gmail.com",
+          user_email: "abhinav@gmail.com",
+        },
+
+        {
+          id: 2,
+          user_name: "rg",
+          user_age: 25,
+          user_Mobile: 987654321,
+          user_email: "pankaj@gmail.com",
+          user_email: "abhinav@gmail.com",
+        },
+
+        {
+          id: 3,
+          user_name: "tg",
+          user_age: 25,
+          user_Mobile: 987654321,
+          user_email: "pankaj@gmail.com",
+          user_email: "abhinav@gmail.com",
+        },
+      ];
+
+      console.log(emp);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        height: 400px;
+        width: 400px;
+        background-color: orange;
+        border: solid 5px red;
+        box-shadow: 1px 2px 3px 2px black;
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- setTImeout executes  a function  only once in a specific time interval -->
+    <div class="box1" id="box1"></div>
+    <button onclick="StartTimeout()">Start tome</button>
+    <button onclick="StopTImeout()">Stop</button>
+    <script>
+      var borderRad = 0;
+      function Demo() {
+        // alert();
+        borderRad += 20;
+        box1.style.borderRadius = borderRad + "px";
+      }
+
+      // setInterval(Demo, 3000);
+      var x;
+      function StartTimeout() {
+        alert("start timeout");
+       x= setTimeout(Demo, 3000);
+      }
+
+      function StopTImeout(){
+        alert('stop TImeout')
+        clearTimeout(x)
+      }
+    </script>
+  </body>
+</html>

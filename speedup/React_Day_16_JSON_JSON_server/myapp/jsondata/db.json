@@ -1,0 +1,29 @@
+
+
+{
+  "Emp":[
+    {
+      "id":1,
+     "EmpName":"Shantanu",
+     "EmpMobile":9876543210,
+     "EmpRole":"Front ENd Dev",
+     "EmppF":12345678
+    },
+    {
+      "id":2,
+     "EmpName":"shanatani",
+     "EmpMobile":9876543210,
+     "EmpRole":"Front ENd Dev",
+     "EmppF":12345678
+    }
+  
+  ],
+
+  "Department":[
+      {
+        "id":1,
+      "Department":"financenpm "
+      }
+  ]
+  
+}

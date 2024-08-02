@@ -1,0 +1,7 @@
+{
+    id:1,
+    name:'Laptop',
+    img:'assets/i1.jpg',
+    btn1:'Add To cart',
+    btn2:'Buy Now'
+  }

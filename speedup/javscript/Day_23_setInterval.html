@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- serInterval executes a same function  multiple times in specific interval -->
+    <button onclick="StartInterval()">Start Interval</button>
+
+    <button onclick="StopInterval()">Stop interval</button>
+    <button onclick="StarANi()">Start animation</button>
+    <button onclick="StopAni()">Stop Interval</button>
+    <br />
+    <hr />
+    <img src="./teddy.webp" alt="ted" height="200px" width="250px" id="img" />
+    <script>
+      function Demo() {
+        alert("start interval");
+      }
+
+      // Demo()
+      // setInterval(handler,ms)
+      // setInterval(Demo, 3000);
+
+      var x;
+      function StartInterval() {
+        alert("start interval");
+        x = setInterval(Demo, 3000);
+      }
+
+      //clear interval
+
+      //to stop the execution of  which is set by interval
+      function StopInterval() {
+        alert("stop interval");
+        clearInterval(x);
+      }
+
+      var mar = 0;
+
+      function Teddy() {
+        mar += 50;
+        document.getElementById("img").style.marginLeft = mar + "px";
+      }
+
+      // Teddy();
+        var y;
+      const StarANi=()=>{
+        alert('start ANi')
+      y  = setInterval(Teddy,1000)
+      }
+      const StopAni=()=>{
+        alert('stop ani')
+        clearInterval(y)
+      }
+    </script>
+  </body>
+</html>

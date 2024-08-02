@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        //type of  operator : retunr data type of a specified varible
+
+      let empid=1234
+      console.log(empid);
+      console.log(typeof empid);
+
+      let isEligible=true
+      console.log(typeof isEligible);
+
+
+      //nullish colascheing op ??
+      //  return 1st  argument  if not nullish (null or undefined)
+
+
+      var a='prathmehs'
+      var b='nishi'
+
+      console.log(a ?? b);//prathmesh
+
+
+      // var x
+      var x= null
+      var y='maehsh'
+      console.log( x ??  y);
+
+
+      //**************** */
+
+      // exponential op : **
+
+      console.log(2**2);//4
+      console.log(2**3);
+      console.log(3**3);
+
+      //ternary op : alternate way to write if else
+      let age =20
+      // if (age>=18){
+      //   console.log('cong');
+      // }
+      // else{
+      //   console.log('not el');
+      // }
+
+
+      var result=age>=18 ?'congrats Dear u are eligible' : 'Sorry u are not eligible ';
+      console.log(result);
+
+      //**************** */
+
+      //concatinatiob opearot
+
+      //addition
+      //concat (data merging)
+      //parsing data
+
+      console.log(10+20);
+      console.log(10+'20');
+      console.log('10'+100);//10100
+      console.log(10+100);
+
+      console.log(20*20);
+      console.log(20-20);
+
+
+      console.log(10*'10  ');
+      console.log(10-'10');
+
+
+      //************* */
+
+      let myname='nitisj'
+      let skill ='react'
+      document.write('ypir name'+myname)
+      document.write("<br>")
+      document.write('your skill is'+skill)
+
+      document.write('<h1>Your name is'+ myname+'</h1>')
+
+
+
+      
+      //template litera;
+
+      // backtic sybo `
+
+      document.write(`yout name ${myname} your bestSkill is ${skill}`)
+
+      document.write(`<h1>yout name ${myname} your bestSkill is <mark>${skill}</mark></h1>`)
+    </script>
+  </body>
+</html>

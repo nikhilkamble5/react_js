@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    onload="alert('onload events called')"
+    onresize="Demo2()"
+    onscroll="Demo1()"
+    id="body"
+    style="height: 1000px"
+  >
+    <!-- windows Events -->
+
+    <!-- onload - when we load our browser windows -->
+
+    <!-- onscroll -when we scroll window  -->
+    <!-- onresize- when we resize our window  -->
+
+    <script>
+      const Demo1 = () => {
+        console.log("onscroll");
+      };
+
+      //********************
+      const Demo2=()=>{
+
+        //BOM method -browser object model
+        // document.getElementById('body')
+        console.log(`inner width is : ${window.innerWidth}`);//return inner widhth of a portion excluding dev tool
+
+        console.log(`inner width is : ${window.outerWidth}`); //return total width of a browser window sscren 
+
+
+        console.log(`inner width is : ${window.innerHeight}`);//return hight of inner posrtion of  browser window
+
+        console.log(`inner width is : ${window.outerHeight}`); //return total height of a  window sscren 
+      }
+    </script>
+  </body>
+</html>

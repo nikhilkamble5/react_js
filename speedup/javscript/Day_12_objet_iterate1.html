@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- object iterating -->
+    <!--  for of:-  must be iterable and return values
+   -->
+    <!--  for in:- used to iterate object and return key value data
+        --> 
+
+    <script>
+
+      const obj ={
+        id:1,
+        prod_name:'laptop',
+        prod_price:'4000',
+        prod_brand:'Hp',
+
+        prod_features:{
+          ram: '8gb',
+          rom:'1tb',
+          processor: 'intel',
+
+        }
+      }
+      console.log(obj);
+      for(let keys in obj){
+        // console.log(keys);
+        // console.log(obj[keys]);
+
+        console.log(` ${keys}: ${obj[keys]}`);
+      }
+
+      //iterate nested object
+
+      for(let x in obj.prod_features){
+        console.log(x + " : "+ obj.prod_features[x]);
+      }
+    </script>
+  </body>
+</html>

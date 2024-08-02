@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- For each and map
+  Used to iterate or looping elements of an array object -->
+
+
+  <script>
+// iterating
+// for-
+// for in-key value-object and array iterate
+// for of-must be iterable and return value
+
+// ***********************************************
+// for each(function)
+  //return undefined
+//A function that accepts up to three arguments.
+// forEach calls the callbackfn function one time for each element in the array.
+
+// its not a chainable
+// 1 comp and other optional
+    //Array
+// forEach(val,index,array)
+
+const arr=[10,20,30,40,50,60,90,100]
+console.log(arr);
+
+// arr.forEach((val,index,array)=>{
+//   console.log(val);
+// })
+
+function fun1(val){
+
+  // return val*5;
+  console.log(val+5);
+}
+
+const result=arr.forEach(fun1)
+console.log(result);//undefined
+
+// *******************
+//Arrray object
+
+const obj=[
+  {
+    id:1,
+    name:'pratik',
+  },
+  {
+    id:2,
+    name:'nikhil',
+  }
+]
+
+obj.forEach((val)=>{
+  console.log(val);
+})
+
+// map-similar -to forEach
+// return a new arry
+//chaianable -other array methods like sort, filter, find
+
+// calls a defined callback functionlon on each element of an array,
+//and returns an array that contains the results.
+
+
+const arr2=[100,200,300,400,500,600,700];
+const result2=arr2.map((val,index,array)=>{
+  // console.log(val);
+  return val
+})
+
+console.log(result2);
+
+
+const obj2=[
+  {
+    id:1,
+    name:'pratik',
+  },
+  {
+    id:2,
+    name:'nikhil',
+  }
+]
+
+var  result3= obj2.map((val)=>{
+  // console.log(val);
+  return val
+})
+console.log(result3);
+  </script>
+</body>
+</html>

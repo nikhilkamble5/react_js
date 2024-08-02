@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // rest parameter
+
+      // modern js features es6
+      // used tpo handle only extra values
+      //it will return on;y extra values
+      //
+
+      //return pure Array
+      //inicates ...
+
+      function Sum(x = 0, y = 0, z = 0, ...input) {
+        console.log(x + y + z);
+
+        console.log(arguments);
+        console.log(input);
+
+        var sum = x+y+z;
+
+        for (let x of input) {
+          console.log(x);
+          sum += x;
+        }
+        console.log(`Total sum is ${sum}`);
+
+      }
+
+      Sum(10, 10, 20);
+      Sum(10);
+
+      Sum(10, 20, 10, 20, 40, 50, 100, 200);
+    </script>
+  </body>
+</html>

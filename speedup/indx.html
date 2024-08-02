@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    const obj={
+      id:1,
+      EmpName:'rushi',
+      EmpRole:'Froont End ',
+      EmpCtc:'10Lpa'
+    }
+    console.log(obj);
+    //convert a javascript value to a javascript object notataion (JSON) String
+    // JSON.stringify()
+
+    console.log(JSON.stringify(obj));
+
+    //***************
+
+    const arr=['abc','xyz','pqr']
+    console.log(arr);
+    const result=JSON.stringify(arr)
+    console.log(result);
+
+
+    //**************
+    //json object
+
+    const obj2=`{
+      "id":1,"name":"pratik","email":"pratik@gmail.com","mobile":9876543210
+    }`;
+    console.log(obj2);
+//convert a javascript object notation (json) string into an object
+
+console.log(    JSON.parse(obj2)
+);
+  </script>
+</body>
+</html>

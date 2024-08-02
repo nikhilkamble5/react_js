@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- do while
+  executes condition alt leasat once if condition becomes wrong also
+
+  syntax 
+  do{
+    //block of code
+    //inc/dec
+  }
+  while(condition)
+-->
+    <script>
+      // var a=1
+      // do{
+      //   document.write('<h1>hello word</h1>')
+      //   a++
+      // }while(a<=10)
+
+      //********************
+      //even odd no from 1 to 50 calculate sum
+
+      // var x = 1;
+      // var sum = 0;
+      // do {
+      //   if (x % 2 !== 0) {
+      //     document.write(`<h2>${x}</h2>`);
+      //     sum += x;
+      //   }
+      //   x++;
+      // } while (x <= 50);
+      // document.write("<br> sum = " + sum);
+
+      //************
+
+      //nested do while
+
+      var a=1
+      do{
+        document.write("<br>" + a+ " <br> ")
+
+        //nest do while 
+        var b=1
+        do{
+          document.write(b*a + " ")
+          b++;
+        }while(b<=10)
+        a++
+      }while(a<=10)
+    </script>
+  </body>
+</html>

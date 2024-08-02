@@ -1,0 +1,144 @@
+<!-- // DOM
+
+// Document Object module
+// dom is a hirarchy of a html content  or html document  i.e tree based structure using HTML DOm,javascript can change and acess html element content javascript get all the power to change html element  dynamically
+
+//to acees html ekements to perform multiple operation ie to ake dynamically
+
+
+// document.getElementById()
+do
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="data">whelcome to dom object</h1>
+    <h2 class="heading">Hello1</h2>
+    <h2 class="heading">Hello2</h2>
+    <h2 class="heading">Hello3</h2>
+    <h2 class="heading">Hello4</h2>
+    <h2 class="heading">Hello5</h2>
+    <hr />
+
+    <label for="">Enter ur name</label>
+    <input
+      type="text"
+      name="username"
+      id="username"
+      class="username"
+      value="pratik"
+      onkeyup="getName()"
+    />
+
+    <h2 id="userdata"></h2>
+    <hr />
+    <script>
+      //get
+      var result = document.getElementById("data").innerHTML;
+      document.write(result);
+      console.log(result);
+
+      //change color
+      document.getElementById("data").style.color = "orange";
+
+      //set
+      document.getElementById("data").innerHTML = "welcome dom methiod";
+
+      //by class name
+      var result2 = document.getElementsByClassName("heading");
+      // return html collectioon by indexing
+
+      //  acess through number indexing
+      var result2 = document.getElementsByClassName("heading")[0].innerHTML;
+      console.log(result2);
+
+      //All data fetching at a time
+
+      var result2 = document.getElementsByClassName("heading")[0].innerHTML;
+      var result3 = document.getElementsByClassName("heading");
+      console.log(result3.length);
+
+      //All data fetching
+      for (let i = 0; i < result3.length; i++) {
+        console.log(result3[i].innerHTML);
+      }
+
+      //set
+
+      document.getElementsByClassName("heading")[0].innerHTML =
+        "Hello class name 1";
+
+      //*******************************
+
+      //by tag name
+      //acees through number indexing
+
+      // var result5=document.getElementsByTagName('h2')
+      var result5 = document.getElementsByTagName("h2")[0].innerHTML;
+      console.log(result5);
+
+      //set
+      document.getElementsByTagName("h2")[3].innerHTML =
+        "Html Dom Method by tag name";
+
+      //**************************
+      //by name
+
+      const getName = () => {
+        // var result=    document.getElementById('username').value
+
+        // var result=    document.getElementsByClassName('username')[0].value
+
+        // var result=    document.getElementsByTagName('username')[0]
+
+        //By name
+        var result = document.getElementsByName("username")[0].value;
+
+        console.log(result);
+
+        //set
+      };
+
+      document.getElementsByName("username")[0].value = "nitesh h";
+
+      //*********** ************
+      //Adition methid
+        // NO NEED OF INDEXING
+      // /queryselector -return 1st matching element with that matched selector
+      // document.queryselector
+
+      // document.querySelector('id/calss/tagname/name')
+
+      // document.querySelector('#id')
+      // document.querySelector('class')
+      // document.querySelector('tagname')
+
+      // var result7=document.querySelector('#username').value;
+      var result7 = document.querySelector(".heading").innerHTML;
+      var result7 = document.querySelector("h2").innerHTML;
+
+      console.log("*************");
+      console.log(result7);
+
+      //*********** ************
+      // queryselector - return all element from that specific  matched seelector
+
+      // var result9 =document.querySelectorAll('#username')[0].values
+
+      // var result9 =document.querySelectorAll('.username')[0].values
+      // var result9 = document.querySelectorAll(".username")[2].innerHTML =
+      //   "HEELO DEAR";
+      // console.log(result9);
+
+            var result9 = document.querySelectorAll(".heading ")
+            console.log(result9);
+
+    </script>
+  </body>
+</html>
