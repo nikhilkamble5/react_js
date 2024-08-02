@@ -59,7 +59,7 @@
 
 //Props 🔥👇
 
-import React from "react";
+import React, { useState } from "react";
 import ErrorMessage from "./components/ErrorMessage";
 import FoodItems from "./components/FoodItems";
 import FoodInput from "./components/FoodInput";
@@ -69,22 +69,41 @@ import Container from "./components/Container";
 
 function App() {
   // let foodItems = [];
-  let foodItems = ["Dal", "Green", "TOmato", "Roti", "Fish"];
+  // let foodItems = ["Dal", "Green", "TOmato", "Roti", "Fish"];
+
+  let [foodItems, setFoodItems] = useState([
+    // "Salad",
+    // "Freen Vegitable ",
+    // "Roti",
+  ]);
+
+  // console.log(`Current Value of textState: ${textToShow}`);
+
+  const onKeyDown = (event) => {
+    if (event.key === "Enter") {
+      let newFooditem = event.target.value;
+      event.target.value = "";
+      let newItems = [...foodItems, newFooditem];
+      setFoodItems(newItems);
+    }
+  };
+
+  // const handleOnChange = (event) => {
+  //   console.log(event.target.value);
+  //   setTextState(event.target.value);  };
 
   return (
     <>
       <Container>
         <h1 className="food-heading">Healdthy Food</h1>
 
+        <FoodInput handleKeyDown={onKeyDown}></FoodInput>
         <ErrorMessage items={foodItems}></ErrorMessage>
-        <FoodInput></FoodInput>
+
         <FoodItems items={foodItems}></FoodItems>
       </Container>
 
-      {/* <Container>
-        ABove is the list of helthy foods that are good for your health and well
-        being
-      </Container> */}
+
     </>
   );
 }
