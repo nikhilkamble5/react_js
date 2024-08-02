@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Method and properties :- used to perform multiple operation on  object -->
+
+    <!-- 🔥Object.keys:-  return keys of a given object and return a new array i.e in array format -->
+    <!-- Object.getOwnPropertyNames() :- return a property names  of  a given object  in  an array format  -->
+    <!-- 🔥Object.values:- return values of a given object in a array format  -->
+    <!--🔥 Object.entries :-  return a both key value of a given object in  a array format   -->
+    <script>
+      const User = {
+        user_name: "Pankaj",
+        user_skill: "React",
+        user_email: "pankaj@gmail.com",
+      };
+
+      console.log(User);
+
+      console.log(Object.keys(User));
+      console.log(Object.values(User));
+
+      console.log(Object.getOwnPropertyNames(User));
+
+      console.log(Object.entries(User));
+
+      //for of -must be iterable and return values
+      var result = Object.entries(User);
+      for (let x of result) {
+        console.log(x);
+      }
+
+      //****************************
+
+      //is () - return  true if both values  are same
+      //isNan
+      //isFinite()
+
+      console.log(Object.is("Rushi", "Rushi")); //true
+      console.log(Object.is(10, "10")); //false
+      console.log(Object.is(null, undefined)); //false
+      console.log(Object.is(null, null)); //true
+
+      //isNan
+      console.log(isNaN("Abc")); //true
+      console.log(isNaN(120)); //false
+
+      //isFinite()
+      console.log(isFinite(120));
+
+      //************************************
+
+      //Object.freeze()-it prevents the object modificaton and prevents to add new properties and attributes
+      //values in given object
+
+      // Object.seal() -similar to freeze but here we can update value
+
+      Object.freeze(User);
+
+      Object.seal(User);
+      User.user_email = "r1ushi@gmail";
+
+      console.log(User);
+
+      // Object.isFrozen() -return true when object is freeze (prevent modification and adition of new priperties and values)
+
+      Object.isSealed(); //return true when object is sealed
+
+      Object.isExtensible(); //return a vlaue that indicates whether new properties can be  added to  an project
+
+      console.log(Object.isFrozen(User));
+      console.log(Object.isSealed(User));
+
+      console.log(Object.isExtensible(User)); //false
+
+      //*************************
+
+      //Creates an object that has specified prototype or that has null prototype
+      // Object.create( )
+
+      //user to copy one or more object  one object valuee to another targeted object
+
+      //Object.assign()
+
+      const obj1 = {
+        id: 1,
+        name: "Shantanu",
+      };
+
+      const obj2 = {
+        skill: "Mern Stack",
+        email: " abc@gmail.com",
+      };
+
+     console.log( Object.assign(obj1, obj2,{dob: '10/01/19999'}));
+
+
+     //***************************
+     //prototype -by default object return itws prototype 
+     console.log(Object.getPrototypeOf(User));
+
+     //O
+    //  Object.setPrototypeOf()
+    // return an array of all symbol properties found directky on object
+
+    Object.getOwnPropertySymbols()
+    Object.getOwnPropertyDescriptor()
+    console.log(    Object.getOwnPropertyDescriptors(Us)
+    );
+    </script>
+  </body>
+</html>

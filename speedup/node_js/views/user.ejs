@@ -1,0 +1,24 @@
+<!-- <!DOCTYPE html>
+<html>
+  <body>
+    
+    <h1>
+
+      This page Belongs to <% emp.name%>
+    </h1>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>This page Belongs to <%= emp.name %></h1>
+    <h1>her Email id is: <%= emp.email %></h1>
+    <h1>She belongs :To <%= emp.city %></h1>
+    <ul>
+      <%emp.phone.forEach((item)=>{ %>
+      <li><%=item%></li>
+      <%})%>
+    </ul>
+  </body>
+</html>

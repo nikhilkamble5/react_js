@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- sync -line by line -->
+    <!-- async parallel execution of code -->
+
+    <script>
+      // function A(){
+      //     //Api calling
+      //     //operation
+      //     //logic
+
+      //     //send request
+      //     //10s
+      //     //20s
+      // }
+      // A()
+
+      // function B(){
+      //     //Normal execution
+
+      //     //5s
+      // }
+      // B()
+      // total -25s
+
+      //async
+
+      //async : parallel executio  of code dosent wait for execution i.e dosent block any operation
+
+      // async programming
+      // callback function
+      // callback hell
+      // solution -promises
+
+      //  async await es-7
+
+      // setTimeout()
+      // setInterval()
+
+      //******************************
+
+      //callback FUnction
+      //i will call back later
+      //one function executes inside another function .ie passing aone function to another function as an argument
+
+      //one function executes after another function finished their execution
+
+      // function X(){
+      //   Y()
+      //   console.log('function x');
+
+      // }
+      // X()
+      // function Y(){
+      //   console.log('function y');
+
+      // }
+
+      //*****************************
+      function X() {
+        console.log("x called");
+      }
+
+      //passing a parameter for above function
+      function Y(callback) {
+        //call that function
+
+        callback();
+        console.log("Y called ");
+      }
+      //pasing a X function as a argument in Y function
+
+      Y(X);
+
+      //**************************
+      const Greet = (msg) => {
+        console.log("Helo Dear Nishi" + msg);
+      };
+
+      // Greet('Good Mornigng')
+
+      const User = (callback) => {
+        callback("Have a great Day");
+        console.log("hello user function");
+      };
+      User(Greet);
+      //*********************************
+
+      function Emp(empID) {
+        return "Helo your EMp id : " + empID;
+      }
+      // var result=Emp(12345)
+      // alert(result)
+
+      function Dept(callback, DeptName) {
+        return "your Dept Name  : " + DeptName + callback(1234);
+      }
+
+      var result = Dept(Emp, "It Department");
+      console.log(result);
+
+      //**************
+
+      // function Demo1() {
+      //   console.log(" !!1 Demo 1 called");
+      // }
+
+      function Demo2(callback) {
+        callback();
+
+        console.log("  Demo 2 Called");
+      }
+
+      Demo2(()=>{
+        console.log('Demo called back');
+      });
+    </script>
+  </body>
+</html>

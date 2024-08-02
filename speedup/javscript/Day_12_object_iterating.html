@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- object -->
+    <!-- object is entity (instance of an object) having methods and properties 
+   Is a king of js
+   Everything in a js is a object
+    we can stor any type of adata in a object
+  in key value pair
+  we can store large amount of data
+  
+  Object :-Acess through named indexing
+  Array:-acess through number indexing
+
+   -->
+
+    <script>
+      //3ways to creat object
+
+      //literal way
+      //creating instance of an array
+      //constructor way
+
+
+
+      //literal way
+      const obj={
+        // key:value 
+
+        empId:123,
+        emp_name:'harshad',
+        emp_skill:['html','css','bottstrap','moder js'],
+        isEligible:true,
+        isOnboard:null,
+
+      }
+
+      console.log(obj);
+      //**************************
+
+      //2 🔥👇  creting instance of an array
+      //using new keyword
+
+      // Object :-provides functionality commmon to all javascript object
+
+      const obj2=new Object();
+      obj2.emp_id=345;
+      obj.emp_name="sakshi";
+      obj2.emp_skill=["Reactjs","react native",
+        "Aws"];
+        console.log(obj2);
+
+        console.log(obj2.emp_skill[1]);
+        // ******************************
+
+        //this keyword
+        //reserved keyword in js
+        //refrence varible
+        //refers to current object ,current method 
+        //global object
+        //constructor way
+
+        console.log(this);
+        console.log(window);
+        //constuctor way
+        // is a function used to create object or instance in a class or used to set values
+        function User(emp_id,emp_skill,emp_role){
+          //asigned valued
+          this.emp_id=emp_id;
+          this.emp_skill=emp_skill;
+          this.emp_role=emp_role;
+        }
+        var res=new User(2323,'react js','front end dev')
+          console.log(res);
+
+          //************
+
+          // we can defined  number ,boolean ,array,string as a object  using 'new keyword'
+
+          var no=20;
+          console.log(no);
+          console.log(typeof no);//number
+
+          //as a object
+          var no2= new  Number(100)
+          console.log(no2);
+          console.log(typeof no2);
+
+          //string
+          var str ="Abhinav"
+          console.log(typeof str);//string
+
+          var str2 = new String("shantanu")
+          console.log(str2);
+          console.log(typeof str2);
+
+
+          var a=true
+          console.log(a);
+          console.log(typeof a);
+
+          
+          var b=new Boolean(false)
+          console.log(b);
+          console.log(typeof b);
+
+
+          const  arr=[10,20,40];
+          console.log(arr);//
+          console.log(typeof arr);
+
+
+          var arr2= new Array('html','css','js')
+          console.log(arr2);
+          console.log(typeof arr2);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ways to write function
+   
+  -->
+    <!-- normal function -->
+    <!-- variable expression function  -->
+    <!-- Anonymous function: no name to the function  -->
+    <!-- Arrow function -->
+
+    <!-- callback function -->
+    <!-- self invoking function -->
+
+    <script>
+      // <!-- normal function -->
+
+      // function A() {
+      //   console.log("normal function");
+      // }
+
+      // Variable expression: function treated like any other variable
+
+      const A = function Demo() {
+        console.log(`varibale expression function`);
+      };
+
+      //function calling
+      A();
+
+      //***************************4
+
+      // Annonymous function
+
+      //no name to the function
+      //
+      const B = function (name, skill) {
+        console.log(`anony mous function`);
+        return name + " " + skill;
+      };
+
+      var result = B("nitish ", "rajesh");
+      console.log(result);
+
+      //**************************
+
+      // Modern js features
+
+      //Fat Arrow Function / Arrow Function /Lambda Function
+
+      //most efficient way to write function
+      // most easily writable ,readable way
+
+      // we can write in a single line
+
+      // no need to bind this keyword - by default this keywprd acess
+
+      // syntax
+      const Demo = () => {
+        //block of code
+        alert("fat arrow function");
+      };
+      Demo();
+      //***************
+
+      const X = () => console.log("hello modern js");
+
+      X();
+
+      const Y = (a, b) => console.log(a + b);
+      Y(100, 200);
+
+      // no neeed of () if u have  single parameter
+
+      const Z = (name) => console.log(name);
+      Z("abhinav");
+
+      //********************
+
+      //return
+      const demo = (x, y) => {
+        return x + y;
+      };
+
+      //************
+      // hoisting
+      // a='prathil'
+      // console.log(a);
+      // var a;
+
+      // let a;
+      //const a; // error canot acess a before intialization
+
+      // normal function is hoisted
+      Demo1();
+
+      function Demo1() {
+        console.log("function demo1 called");
+      }
+
+      console.log(demo(100, 50));
+
+      //other function are not  hoisted
+      // Demo2()
+      const Demo2= ()=>{
+        console.log('other function');
+      }
+
+      Demo2()
+
+    </script>
+  </body>
+</html>

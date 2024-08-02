@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Eg -->
+   <h1>keyboard event in js</h1>
+   <label for=" ">Enter your name</label>
+   <input type="text" placeholder="enter your name" name="username" id="username" onkeyup="GetData()">
+
+
+   <h1 id="data"></h1>
+  <script>
+    function GetData(){
+     var result= document.getElementById('username').value;
+      // console.log(result);
+
+      document.getElementById('data').innerHTML=result
+    }
+  </script>
+</body>
+</html>

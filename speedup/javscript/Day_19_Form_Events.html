@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- onsubmit -when we work on form 
+   
+  onfocus - when we focus on input field
+  onblur -when we lost focus 
+  
+  onchange  -change data
+  onselect  - when  we select content
+
+  onsubmit-when we submit our form
+  -->
+
+  <h2> Form event</h2>
+  <label for=" ">Enter your name</label>
+  <input type="text"  id="username" placeholder=" enter ur name" onfocus="Demo1()" onblur="Demo2()">
+      <hr>
+
+      <input type="number" name ="" id="no1" onclick="Demo3('no2')">
+      <input type="number" name ="" id="no2" onclick="Demo3('no1')">
+
+      <!-- onchnage -->
+
+      <label for="">Chose ur skill</label>
+      <select name="" id="skill" onchange="Getskill()">
+        <option value="React">React</option>
+        <option value="Modern Js">Modern Js"</option>
+        <option value="Aws">Aws</option>
+        <option value="Native">Native</option>
+        <option value="mui">mui</option>
+      </select>
+
+
+      <hr>
+      <!-- onselect -->
+       <input type="text" value="'sanket" id="data" onselect="alert(`Hello You slected ${data.value} `)">
+        <hr>
+       <!-- onsubit - -->
+        <!-- <form action="#" onsubmit="alert('congrats sucessfully submited form')"> -->
+
+          <!-- <form action="#" onsubmit="return confirm('Are you Sure')"> -->
+            <form action="#" onsubmit="SaveForm()">
+          <label for="">Your email</label>
+          <input type="email" name="useremail " id="" placeholder="john@gmail.com">
+          <br>
+          <label for="">Enter password</label>
+          <input type="password" name="userpass" id="">
+
+
+          <button type="submit">Save Form</button>
+          <input type="submit" >
+
+          <button>Submit form</button>
+
+          <button type="button">Normal button</button>
+
+        </form>
+  <script>
+
+    const Demo1=()=>{
+      document.getElementById('username').style.backgroundColor='orange'
+    }
+    //onblur - when we lost our focus
+    const Demo2=()=>{
+      username.style.backgroundColor='yellow'
+    }
+
+    const Demo3=(data)=>{
+      document.getElementById(data).style.backgroundColor ='pink'
+    }
+
+    //**********************************
+
+      //onchange -
+      //function type variable expression
+      const Getskill=function A(){
+        var result=  document.getElementById('skill').value;
+
+        alert(`your skill is ${result}`  )
+      }
+    //**********************************
+
+
+    //onselect -when we select out text content 
+    //
+
+
+    //onsubmit
+
+    function SaveForm(){
+      alert('congrats')
+    }
+  </script>
+</body>
+
+
+</html>

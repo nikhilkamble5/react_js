@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let no=prompt('Enter a numger')
+      // console.log(typeof no );//string
+
+      //parsing - convert string to integer
+      //+
+      //Number()
+      //parseInt()
+
+      // let no = parseInt(prompt("ENter A Number"));
+      // let no = +(prompt("ENter A Number"));
+      // console.log(typeof no);
+      // if (no % 2 === 0) {
+      //   alert("Even  no " + no);
+      // } else {
+      //   alert("odd no" + no);
+      // }
+
+      //if elseif else
+      //used to cheks 2 or more condition
+
+      //take 3 no from user  and find  out greter no
+
+      // let no1 = +prompt("ENter no 1",0);
+      // let no2 = +prompt("ENter no 2",0);
+      // let no3 = +prompt("ENter no 3",0);
+
+      // if(no1>=no2 && no1>=no3){
+      //   alert(`${no1} is a bigger no`)
+      // }
+      // else if(no2>=no1 && no2>=no3){
+      //   alert(`${no2} is a bigger no`)
+
+      // }
+      // else{
+      //   alert(`${no3} is a bigger no`)
+
+      // }
+
+      //*****************
+      // take shop amout from user
+      // if shop_amt>=10000 && <20000
+      // disc=10%
+
+      // shop_amt>=20000 && <30000
+      // disc=20%
+
+      // shop_amt>=30000 && <40000
+      // disc=30%
+
+      // shop_amt>=40000
+      // disc=40%
+
+      //******************************************
+      let shop_amt = +prompt("Enter shopin amount", 0);
+      var disc = 0;
+      if (shop_amt >= 10000 && shop_amt < 20000) {
+        disc = 10;
+      } else if (shop_amt >= 20000 && shop_amt <= 30000) {
+        disc = 20;
+      }
+      
+      else if (shop_amt >=40000) {
+        disc = 40;
+      }
+      else {
+        disc = 0;
+      }
+
+      //discount calculate
+      //
+      let disc_amt = (shop_amt * disc) / 100;
+      // alert(disc_amt);
+
+      document.write(`<h1>He loo Dear ur SHopping Amount is ${shop_amt}</h1>`);
+      document.write(
+        `<h1>u get  ${disc} %discounted Amount is ${disc_amt}</h1>`
+      );
+
+      var net_total = shop_amt - disc_amt;
+      document.write(
+        `<h1>your total net shopping amount is <mark>${net_total}</mark></h1>`
+      );
+    </script>
+  </body>
+</html>

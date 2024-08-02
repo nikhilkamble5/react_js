@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="data"></h1>
+
+  <!-- callioig  a fuction on events -->
+  <button onclick="demo1()">Click here</button>
+  <button onclick="Colorfun()">change color</button>
+  <script>
+    //function  : b;ock of code i.e bunch of js statement
+// reused fubnction multiple times by calling tha specific function 
+// write or definde and reused multiple times
+//  we can call a function ultiple times by pasing a diffrent argument
+// most  functions are calling or events
+//synatx
+//function fun_name(){
+    //block if code
+// }
+//fun_name()
+
+//
+
+
+
+
+  //function defination /declaration
+  function demo1(){
+    //block of code
+    document.getElementById('data').innerHTML='Welcome to the function in js'
+  alert('hello mpdern js')
+  }
+ 
+  function Colorfun(){
+    document.getElementById('data').style.color='orange';
+  }
+  // demo1()
+
+  //adition func
+
+  var a=100
+  var b=200
+  function sum(){
+    console.log(a+b);
+  }
+  sum()
+  </script>
+</body>
+</html>

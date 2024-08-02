@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1{
+        height: 400px;
+        width: 400px;
+        background-color: aqua;
+        margin: 5px 5px;
+      }
+
+
+      .newclass{
+        height: 400px;
+        width: 400px;
+        background-color: orange;
+        margin: 5px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- DOm properties -->
+    <p id="data">
+      Lorem ipsum dolor, sit amet       <b>onsectetur adipisicing elit.</b>        c Ipsam,
+      odit!
+    </p>
+
+    
+    <Button onclick="RmoveClass()">Remove Class</Button>
+    <Button onclick="AddClass()">Add Class</Button>
+    <Button onclick="ToggleClass()">Toggle Class</Button>
+    <hr>
+    <div class="box1 box2 box3" id="box1"></div>
+
+
+
+<script>
+
+      //innerHtml- return html text contetnt including html isndie element andinside spacing
+
+      var result = document.getElementById("data").innerHTML;
+      console.log(result);
+
+      //2 🔥👇 inner text-return only text content i.e excluding inside element and spacing
+
+      
+      var result2=document.getElementById('data').innerText;
+      console.log(result2);
+
+      //outerText -same lik inner trext
+      
+      var result3=document.getElementById('data').outerText;
+      console.log(result3);
+
+      //textContetnt -return text content including inside spacing but excluding  inside element 
+
+      var result4=document.getElementById('data').textContent;
+      console.log(result4);
+//outerHtml  -return whole html element  i.e inside and outside 
+
+var result5=document.getElementById('data').outerHTML;
+      console.log(result5);
+
+      //classList( )- return class liest .ie DOM token list i.e collection list
+
+      //3 Methods 
+      //add()
+      // remove()
+      //toggle()
+
+      //class name
+      var result6=document.getElementById('box1').classList;
+      console.log(result6);
+
+
+      //*********************
+
+      const RmoveClass=()=>{
+       var result7= document.getElementById('box1').classList.remove('box1')
+        console.log(result7);
+      }
+
+
+      //addclass
+      
+      const AddClass=()=>{
+  document.getElementById('box1').classList.add('newclass')
+      }
+
+      //toggle class
+
+      
+      const ToggleClass=()=>{
+  document.getElementById('box1').classList.toggle('newclass')
+      }
+
+      //**************************
+
+      // classname -return classname in a string frormat 
+
+      const result8=document.getElementById('box1').className
+      console.log(result8);
+
+      // const result9=document.querySelector('#box1').getAttribute('class')
+      const result9=document.querySelector('#box1').getAttribute('id')
+
+      //setAttribute
+   document.querySelector('#box1').setAttribute('class','newAddedClass')
+   document.querySelector('#box1').setAttribute('style','border-radius:50px')
+
+      console.log(result9);
+
+      //**************************************
+
+      // createElement() used to create html element dynamically
+      //replacechild()
+      //appendchild()
+
+
+      // var h1=document.createElement('h1')
+      var h1=document.createElement('marquee')
+
+      h1.innerText="Welcom to the html Dom properties"
+
+
+      //apend
+      document.body.append(h1)
+
+      //**********************************88
+
+      //createTextNode()
+
+      var result=document.createTextNode('Welcome dear')
+      document.body.appendChild(result)
+
+
+    </script>
+  </body>
+</html>

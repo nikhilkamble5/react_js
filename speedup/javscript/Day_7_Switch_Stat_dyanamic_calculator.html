@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- switch statement -->
+    <!-- alternate way to check multiple condition at a sane tie in a efficient  way -->
+    <!-- handle multiple cases operations at as same time -->
+
+    <script>
+      // switch(data){
+      //   case 1:{
+
+      //   }
+      //   case 2:{
+
+      //   }
+      //   default:{
+      //     // if all  condition goes wrong
+      //   }
+      // }
+      //*********************************
+      // var monthno = +prompt("Enter a  month ");
+      // switch (monthno) {
+      //   case 1:
+      //     alert("january");
+      //     break;
+      //   case 2:
+      //     alert("feb");
+      //     break;
+      //   case 3:
+      //     alert("august");
+      //     break;
+      //   default:
+      //     alert("please enter a valid month");
+      // }
+
+      //*********************************
+      //wekend or weekday
+
+      // let day = prompt("enter a day");
+      // switch (day) {
+      //   case "monday":
+      //     alert("weekday");
+      //     break;
+      //   case "tuesday":
+      //     alert("weekday");
+      //     break;
+
+      //   case "saturday":
+      //     alert("weekday");
+      //     break;
+
+      //   case "sunday":
+      //     alert("weekend");
+      //     break;
+      //   default:
+      //     alert("enter valid day");
+      // }
+
+
+
+      
+      // let day = prompt("enter a day");
+      // switch (day) {
+      //   case "monday":
+      //   case 'tuesday':
+      //     case "wednesday":
+      //       case "friday":alert('wekday')
+      //         break;
+      //       case 'saturday':
+      //         case 'sunday':alert('weekend')
+      //         break;
+      //   default:
+      //     alert("enter valid day");
+      // }
+
+
+      let no1=+prompt('enter a no1 ',0)
+      let no2=+prompt('enter a no2 ',0)
+
+      let op=prompt('chose any one given : +,-,/,*,%');
+
+      switch(op){
+        case '+':{
+          alert(` ${no1} + ${no2}=${no1 +no2}`);
+          break;
+        }
+        case '-':{
+          alert(` ${no1} - ${no2}=${no1-no2}`);
+          break;
+        }
+
+        case '*':{
+          alert(` ${no1} * ${no2}=${no1 * no2}`);
+          break;
+        }
+
+        case '/':{
+          alert(` ${no1} / ${no2}=${no1 / no2}`);
+          break;
+        }
+
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+
+    const obj={
+
+      //key:value
+      id:1,
+      empNameL:'sanket',
+      empSkill:['html','css','java'],
+      isEligible:true,
+      empCtc:'12Lpa'
+    }
+    console.log(obj);
+
+    const obj2=new Object();
+    obj2.id=123;
+    obj2.empNameL="nitesh",
+    obj2.empCtc="20lpa"
+
+    // *******************
+
+    function User(id,name,skill){
+this.id=id;
+this.name=name;
+this.skill=skill;
+    }
+    const result= new User(34,'nishi','reeact');
+    console.log(result);
+
+    let no=20;
+    console.log(no);
+    console.log(typeof no);
+
+    let no2=new Number(30);
+    console.log(no2);
+    console.log(typeof no2);
+  </script>
+</body>
+</html>

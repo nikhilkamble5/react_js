@@ -1,0 +1,40 @@
+par let vs const
+•FAT Arrow Functiql
+Spread Operator-
+Rest Parameter-
+Rest operator
+Array Destructring
+ Object Destructring
+Higher order function-
+Function 1st class citizens-function treated as like any other variable
+•Dom and it's working
+•template literals---
+a- default parameter
+// IMP Points
+/ /Sync/ Async execution-Callback function->Ca11back hell (issue)-> Promises
+->Async/await..
+/ /oops
+
+
+EECMA Script 6
+Array Methods and String
+Push, Pop, Shift, unshift
+•Concat Vs Join
+"-Slice vs Splice
+reduce, for each, map,Closures
+ modulesl
+pure function in js
+Async and await
+Synchronous or Asynchronous
+Js Single Threaded or multithreaded
+setTimeout va setlnterval functions
+'-Callback and callback hell
+solution for callback hell
+
+HOF
+for each vs map
+filter find
+some and every
+reduce
+addEventListerner method
+1

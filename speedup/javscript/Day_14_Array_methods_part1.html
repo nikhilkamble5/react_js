@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Array method an properties : to perform multiple operationon arrray -->
+    <script>
+      const arr = ["hrashad0", "megha", "rhaul", "punam", "v8"];
+      //property
+      //length
+
+      console.log(arr);
+      console.log(arr.length);
+      //******************************
+
+      // 🔥 Add or remove element from given array
+
+      //push():- add element to last index of an array
+      //modified origonal array
+
+      arr.push("Abhinav");
+      console.log(arr);
+
+      var res = arr.push("pankaj");
+
+      console.log(res);
+      console.log(arr);
+      //******************************
+
+      //pop() :-  remove elemnt fro lasr endex of an array
+      //modified origonal array
+      //return remove element
+
+      const arr2 = [10, 20, 30, 40, 50, 60];
+      arr2.push(100);
+      console.log(arr2);
+
+      arr2.pop();
+      arr2.pop();
+      arr2.pop();
+
+      const res2 = arr2.pop();
+      console.log(res2); //30
+      console.log(arr2);
+      //******************************
+
+      //unshift()- Add element to starting index of an array
+
+      //modified origonal and return new length
+
+      arr2.unshift(1000);
+
+      const res3 = arr2.unshift(2000);
+      console.log(res3);
+      console.log(arr2);
+
+      //******************************
+
+      // shift() - same as pop
+      // remove element from starting index
+      // return remove  element
+
+      const arr3 = [100, 200, 300];
+      arr3.shift();
+      console.log(arr3);
+
+      //******************************
+      const arr4 = [1000, 2000, 4000, 5000];
+      arr4.unshift(50);
+      arr4.shift();
+      arr4.pop();
+      arr4.push(10000);
+      console.log(arr4);
+
+      //******************************
+
+      // splice()
+      //used to add or remove  multiple element element in  a given array
+
+      //origonal modified
+      //return remove element
+
+      //syntax splice(start,length-(how many element))
+
+      const arr5 = [50, 40, 60, 80, 90, 10, 30, 25];
+      console.log(arr5);
+
+      // arr5.splice(2,2) //60 80
+      // arr5.splice(2,1) //60
+
+      arr5.splice(0, 5); //60 80
+
+      console.log(arr5);
+
+      const res6 = arr5.splice(3, 4);
+      console.log(res6);
+      console.log(arr5); 
+
+
+      console.log(arr5);
+      arr5.splice(0,0,1000,2000,3000)
+      console.log(arr5);
+
+      //*****************************
+
+      // slice()- extract portion of an array
+      // return new array
+      //syntax slice(start,end (last index ignore))
+      //-ve index allowed
+
+
+      //similar to substring()
+      //only on string
+      //-ve index not allowed
+
+      const user=['A','B','C','D','E','F'];
+     var res7= user.slice(2,4)//c d
+     console.log(res7);
+      console.log(user);
+
+
+      var res8=user.slice(0)
+      console.log(res8);
+
+      var res9=user.slice(-3,-2);//d
+      console.log(res9);
+
+      console.log(user);
+    </script>
+  </body>
+</html>
